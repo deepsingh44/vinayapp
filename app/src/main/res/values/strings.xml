@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VinayApp</string>
+    <string-array name="names">
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+    </string-array>
+</resources>
