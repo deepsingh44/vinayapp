@@ -18,10 +18,13 @@ public class RecylerDemo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyler_demo);
+        employees=(ArrayList<Employee>) getIntent().getExtras().getSerializable("list");
         RecyclerView recyclerView = findViewById(R.id.myrecylcer);
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        dummyData();
+Log.e("error",employees.size()+"");
+
+
         CustomAdapter customAdapter=new CustomAdapter(employees);
 
         customAdapter.setDeepListener(new CustomAdapter.DeepListener() {
@@ -36,7 +39,7 @@ public class RecylerDemo extends AppCompatActivity {
 
     List<Employee> employees;
 
-    private void dummyData() {
+    /*private void dummyData() {
         employees = new ArrayList<>();
         for (int i = 0; i < 50; i++) {
             Employee e = new Employee();
@@ -45,6 +48,6 @@ public class RecylerDemo extends AppCompatActivity {
             employees.add(e);
         }
 
-    }
+    }*/
 
 }

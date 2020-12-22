@@ -3,55 +3,49 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/back"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:scaleType="centerCrop"/>
 
-   <!-- <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Deep Singh"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:layout_gravity="center"/>-->
-
-   <!-- <EditText
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Name"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/outline"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:padding="15dp"
-        android:inputType="number"
-        android:digits=" -1234567890" />-->
-
-   <!-- <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/id"
         android:padding="20dp"
-        android:id="@+id/spn"/>-->
+        android:hint="Enter Id"/>
 
-   <!-- <AutoCompleteTextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/auto"
+        android:id="@+id/name"
         android:padding="20dp"
-        android:layout_margin="20dp"
-        android:hint="Enter name"/>-->
+        android:hint="Enter Name"/>
 
-    <MultiAutoCompleteTextView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/multi"
-        android:padding="20dp"
-        android:hint="Enter name"
-        android:layout_margin="20dp"/>
+        android:onClick="addEmployee"
+        android:text="Add Employee"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="removeEmployee"
+        android:text="Remove Employee"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="updateEmployee"
+        android:text="Update Employee"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fetchEmployee"
+        android:text="Fetch Employee"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="allEmployee"
+        android:text="All Employee"/>
 
 </LinearLayout>
